@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Ball Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Catch the Ball!</h1>
+        <h3>by UDAY DUHOON</h3>
+        <p>Click the ball as many times as you can in 30 seconds!</p>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time Left: 30s</div>
+        <div id="high-score">High Score: 0</div>
+        <div class="play-area">
+            <div id="ball"></div>
+            <div id="golden-ball"></div>
+        </div>
+        <button id="start-button">Start Game</button>
+        <button id="restart-button" style="display: none;">Restart Game</button>
+        <div id="leaderboard" style="display: none;">
+            <h3>Leaderboard</h3>
+            <ol id="leaderboard-list"></ol>
+        </div>
+    </div>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="golden-sound" src="golden.mp3"></audio>
+    <audio id="game-over-sound" src="game-over.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
